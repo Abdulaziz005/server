@@ -4,7 +4,9 @@ from buttons import main_menu,kiyim,oziq_ovqatlar,tehnika,ichimlik,inline_button
 
 TOKEN = "7319580615:AAFGdJ--oQU3HqIhruxd6Ayklm03eFSVej0"
 
-bot = Bot(token=TOKEN,parse_mode="HTML")
+PROXY_URL = "http://proxy.server:3128"
+
+bot = Bot(token=TOKEN,parse_mode="HTML",proxy=PROXY_URL)
 
 dp = Dispatcher(bot=bot)
 
